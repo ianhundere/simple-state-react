@@ -9,6 +9,7 @@ class Counter extends Component {
         return (
             <div>
                 Counter: {this.state.counter}
+                <br />
                 <button
                     type="button"
                     onClick={() =>
@@ -17,7 +18,9 @@ class Counter extends Component {
                             counter: previousState.counter + 1
                         }))
                     }
-                />
+                >
+                    click + 1
+                </button>
             </div>
         );
     }
